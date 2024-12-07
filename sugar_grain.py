@@ -42,6 +42,9 @@ class sugar_grain:
         # Add the body and shape to the space
         self.space.add(self.body, self.shape)
         
+        # If in bucket, set to true (for sounds not playing multiple times)
+        self.sound_played = False
+        
     def update(self):
         """
         Update method for sugar_grain.

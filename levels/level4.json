@@ -1,0 +1,124 @@
+{
+    "level_by": "Level Designer",
+    "spout_x": 555,
+    "spout_y": 90,
+    "buckets": [
+        {
+            "x": 176,
+            "y": 170,
+            "width": 50,
+            "height": 50,
+            "needed_sugar": 10
+        },
+        {
+            "x": 625,
+            "y": 520,
+            "width": 50,
+            "height": 50,
+            "needed_sugar": 10
+        }
+    ],
+    "statics": [
+        {
+            "x1": 72,
+            "y1": 87,
+            "x2": 290,
+            "y2": 87,
+            "color": "lightblue",
+            "line_width": 5,
+            "friction": 0.5,
+            "restitution": 0.5
+        },
+        {
+            "x1": 290,
+            "y1": 89,
+            "x2": 290,
+            "y2": 435,
+            "color": "lightblue",
+            "line_width": 5,
+            "friction": 0.5,
+            "restitution": 0.5
+        },
+        {
+            "x1": 72,
+            "y1": 87,
+            "x2": 72,
+            "y2": 445,
+            "color": "lightblue",
+            "line_width": 5,
+            "friction": 0.5,
+            "restitution": 0.5
+        },
+        {
+            "x1": 290,
+            "y1": 436,
+            "x2": 105,
+            "y2": 436,
+            "color": "lightblue",
+            "line_width": 5,
+            "friction": 0.5,
+            "restitution": 0.5
+        },
+        {
+            "x1": 42,
+            "y1": 505,
+            "x2": 41,
+            "y2": 53,
+            "color": "lightblue",
+            "line_width": 5,
+            "friction": 0.5,
+            "restitution": 0.5
+        },
+        {
+            "x1": 42,
+            "y1": 55,
+            "x2": 325,
+            "y2": 55,
+            "color": "lightblue",
+            "line_width": 5,
+            "friction": 0.5,
+            "restitution": 0.5
+        },
+        {
+            "x1": 325,
+            "y1": 55,
+            "x2": 325,
+            "y2": 541,
+            "color": "lightblue",
+            "line_width": 5,
+            "friction": 0.5,
+            "restitution": 0.5
+        },
+        {
+            "x1": 42,
+            "y1": 504,
+            "x2": 292,
+            "y2": 504,
+            "color": "lightblue",
+            "line_width": 5,
+            "friction": 0.5,
+            "restitution": 0.5
+        },
+        {
+            "x1": 290,
+            "y1": 503,
+            "x2": 290,
+            "y2": 537,
+            "color": "lightblue",
+            "line_width": 5,
+            "friction": 0.5,
+            "restitution": 0.5
+        },
+        {
+            "x1": 106,
+            "y1": 438,
+            "x2": 106,
+            "y2": 448,
+            "color": "lightblue",
+            "line_width": 5,
+            "friction": 0.5,
+            "restitution": 0.5
+        }
+    ],
+    "number_sugar_grains": 100
+}
