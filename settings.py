@@ -29,3 +29,12 @@ START_FLOW = pg.USEREVENT + 1
 FLOW_DELAY = pg.USEREVENT + 2
 LOAD_NEW_LEVEL = pg.USEREVENT + 3
 EXIT_APP = pg.USEREVENT + 4
+
+# Sounds Contants
+
+SOUNDS = {
+    'level': './sounds/Level.mp3',
+    'bonus': './sounds/bucket_explode.wav',
+    'bucket': './sounds/bucket2.wav',
+    'level_complete': './sounds/complete2.wav'
+}

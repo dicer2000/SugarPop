@@ -32,6 +32,8 @@ class Bucket:
         wall_thickness = 0.2  # Thickness of the walls in physics units
 
         # Convert Pygame coordinates to Pymunk coordinates
+        self.x = x
+        self.y = y
         x_pymunk = x / SCALE
         y_pymunk = y / SCALE # (HEIGHT - y) / SCALE  # Adjust y-coordinate for Pymunk's coordinate system
 
@@ -81,13 +83,16 @@ class Bucket:
             # Calculate the vector from the bucket center to the grain
             dx = grain_pos.x - bucket_center_x
             dy = grain_pos.y - bucket_center_y
-            distance = sqrt(dx**2 + dy**2)
+            distance = sqrt(dx**2 + dy**2)            
 
             if distance < 2:  # Only affect grains within a certain radius
                 # Normalize the vector
                 if distance > 0:
                     dx /= distance
                     dy /= distance
+
+                # Allow to make a sound again
+                grain.sound_played = False
 
                 # Apply a radial impulse (adjust magnitude as needed)
                 impulse_magnitude = 20 / (distance + 0.1)  # Reduce force with distance
@@ -128,7 +133,7 @@ class Bucket:
         :param sugar_grain: The sugar grain to check.
         """
         if self.exploded:
-            return  # Don't count grains if the bucket has exploded
+            return False # Don't count grains if the bucket has exploded
 
         grain_pos = sugar_grain.body.position
 
