@@ -18,4 +18,4 @@ Use the mouse to draw walls
 - 'm' to mute
 - other 'secret' keys
 
-(c)2024 Brett W Huffman
+©2024 Brett W Huffman
