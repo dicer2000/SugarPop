@@ -1,7 +1,7 @@
 ![SugarPop Startup Screen](./images/SugarPop_basic.png)
 
 # SugarPop
-This final project was developed by the 2024 Introduction to Programming class at Principia College (www.principia.edu).  Enjoy and send us your feedback.  What was the hardest level?
+This final project was developed by the [2024 Introduction to Programming class at Principia College](https://www.principiacollege.edu/academics/majors/computer-science) (www.principia.edu).  Enjoy and send us your feedback.  What was the hardest level?
 
 ## Installation
 The following must be installed to get this program to work:
