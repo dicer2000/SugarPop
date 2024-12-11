@@ -18,4 +18,4 @@ Use the mouse to draw walls
 - 'm' to mute
 - other 'secret' keys
 
-(c)2024 Principia College
+(c)2024 Brett W Huffman
