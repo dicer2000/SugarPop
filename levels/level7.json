@@ -1,0 +1,76 @@
+{
+    "level_by": "David",
+    "number_sugar_grains": 125,
+    "statics": [
+        {
+            "x1": 100,
+            "y1": 550,
+            "x2": 250,
+            "y2": 400,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        },
+        {
+            "x1": 250,
+            "y1": 400,
+            "x2": 400,
+            "y2": 500,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        },
+        {
+            "x1": 400,
+            "y1": 500,
+            "x2": 500,
+            "y2": 400,
+            "color": "yellow",
+            "line_width": 4,
+            "friction": 0.4,
+            "restitution": 0.6
+        },
+        {
+            "x1": 500,
+            "y1": 400,
+            "x2": 650,
+            "y2": 550,
+            "color": "blue",
+            "line_width": 4,
+            "friction": 0.5,
+            "restitution": 0.3
+        },
+        {
+            "x1": 300,
+            "y1": 350,
+            "x2": 450,
+            "y2": 300,
+            "color": "green",
+            "line_width": 5,
+            "friction": 0.7,
+            "restitution": 0.4
+        }
+    ],
+    "buckets": [
+        {
+            "x": 150,
+            "y": 50,
+            "width": 50,
+            "height": 40,
+            "needed_sugar": 60
+        },
+        {
+            "x": 500,
+            "y": 50,
+            "width": 50,
+            "height": 40,
+            "needed_sugar": 45
+        }
+    ],
+    "spout_x": 350,
+    "spout_y": 680,
+    "time_to_complete_level": 200
+
+}

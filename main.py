@@ -20,6 +20,7 @@ import level
 import message_display
 import GameSounds
 import hud
+import Teleportation
 
 class Game:
     def __init__(self) -> None:
@@ -32,7 +33,7 @@ class Game:
         self.font = pg.font.SysFont(None, 36)  # Default font, size 36
 
         # Create a Pymunk space with gravity
-        self.current_level = 3 # Start game at 0
+        self.current_level = LEVEL_START_NO # Start game at 0
         self.level_complete = False
         self.level_by = ''
         self.space = pymunk.Space()
@@ -41,11 +42,16 @@ class Game:
         self.gravity_direction = 1
         self.space.iterations = 40 
         self.is_paused = False
+        
+        # Tornado
+        self.tornado_active = False
+
 
         self.drawing_lines = []
         self.sugar_grains = []
         self.buckets = []
         self.statics = []
+        self.teleportation_zones = []
         self.total_sugar_count = 0
         self.level_spout_position = None
         self.level_grain_dropping = None
@@ -63,7 +69,7 @@ class Game:
         
         # Play the background music, looping
         self.sounds.play('level', True)
-        pg.time.set_timer(LOAD_NEW_LEVEL, 2000)  # Load in 2 seconds
+        pg.time.set_timer(LOAD_NEW_LEVEL, 5000)  # Load in 5 seconds
 
     def load_level(self, levelnumber=0):
         # Destroy any current game objects
@@ -79,6 +85,7 @@ class Game:
         self.drawing_lines = []  # Clear the list
         self.buckets = []
         self.statics = []
+        self.teleportation_zones = []
         self.level_by = ''
  
         new_level = LEVEL_FILE_NAME.replace("X", str(levelnumber))
@@ -92,6 +99,13 @@ class Game:
             self.level_grain_dropping = False
             self.level_spout_position = (self.level.data['spout_x'], self.level.data['spout_y'])
             self.build_main_walls()
+
+            if 'teleportations' in self.level.data:  # Ensure teleportations are defined in the JSON
+                for tp in self.level.data['teleportations']:
+                    tele = Teleportation.Teleportation((tp['entry'][0], tp['entry'][1]), (tp['exit'][0], tp['exit'][1]), tp['entry_radius'], tp['exit_radius'], SCALE, HEIGHT)
+                    self.teleportation_zones.append(tele)
+                    
+                print(f"Loaded teleportation zones: {self.teleportation_zones}") 
 
             # Load buckets
             for nb in self.level.data['buckets']:
@@ -156,6 +170,10 @@ class Game:
             # Update any messages
             self.message_display.update()
             
+            # Update the transporters
+            for tele in self.teleportation_zones:
+                tele.update(time_step)
+                
             # Calculate buckets count by counting each grain's position
             # First, explode or reset the counter on each bucket
             for i in range(len(self.buckets) - 1, -1, -1):
@@ -178,6 +196,10 @@ class Game:
                     if bucket.collect(grain) and grain.sound_played == False:
                         self.sounds.play('bucket')
                         grain.sound_played = True
+                        
+                # Check grains going into Teleportation
+                for tele in self.teleportation_zones:
+                    tele.sugarEnterTransport(grain)
                 
             # Drop sugar if needed
             if self.level_grain_dropping:
@@ -199,6 +221,10 @@ class Game:
     
         for bucket in self.buckets:
             bucket.draw(self.screen)
+
+        # Draw the transporters
+        for tele in self.teleportation_zones:
+            tele.draw(self.screen)
 
         # Draw each sugar grain
         for grain in self.sugar_grains:
@@ -287,6 +313,30 @@ class Game:
                     self.mouse_down = False
                 if self.current_line and self.iter % 10 == 0:
                     self.current_line.add_vertex(mouse_x, mouse_y)
+
+            # Start Tornado with 'T' key
+            elif event.type == pg.KEYDOWN and event.key == pg.K_RIGHT and not self.tornado_active:
+                self.tornado_active = True
+                self.space.gravity = (5, 3)  # Tornado effect
+                pg.time.set_timer(TORNADOR, 2000)  # Schedule the Tornado to stop after 2 seconds
+
+            # Stop Tornado effect
+            elif event.type == TORNADOR:
+                self.tornado_active = False
+                self.space.gravity = (0,-9.8)   # Reset gravity
+                pg.time.set_timer(TORNADOR, 0) 
+
+             # Start Tornado with 'T' key
+            elif event.type == pg.KEYDOWN and event.key == pg.K_LEFT and not self.tornado_active:
+                self.tornado_active = True
+                self.space.gravity = (-5, 3)  # Tornado effect
+                pg.time.set_timer(TORNADOL, 2000)  # Schedule the Tornado to stop after 2 seconds
+
+            # Stop Tornado effect
+            elif event.type == TORNADOL:
+                self.tornado_active = False
+                self.space.gravity = (0,-9.8)   # Reset gravity
+                pg.time.set_timer(TORNADOL, 0) 
 
             elif event.type == START_FLOW:
                 self.level_grain_dropping = True

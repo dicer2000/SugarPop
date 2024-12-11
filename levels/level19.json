@@ -1,0 +1,86 @@
+{
+    "level_by": "Ethan",
+    "number_sugar_grains": 185,
+    "statics": [
+        {
+            "x1": 0,
+            "y1": 200,
+            "x2": 300,
+            "y2": 200,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        },
+        {
+            "x1": 700,
+            "y1": 500,
+            "x2": 600,
+            "y2": 500,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        }, 
+        {
+            "x1": 700,
+            "y1": 220,
+            "x2": 1800,
+            "y2": 220,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        },
+        {
+            "x1": 400,
+            "y1": 350,
+            "x2": 500,
+            "y2": 350,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        }
+    ],
+    "buckets": [
+        {
+            "x": 100,
+            "y": 230,
+            "width": 50,
+            "height": 40,
+            "needed_sugar": 40
+        },
+        {
+            "x": 100,
+            "y": 50,
+            "width": 50,
+            "height": 40,
+            "needed_sugar": 10
+        },
+        {
+            "x": 900,
+            "y": 250,
+            "width": 50,
+            "height": 40,
+            "needed_sugar": 35
+        },
+        {
+            "x": 460,
+            "y": 380,
+            "width": 50,
+            "height": 40,
+            "needed_sugar": 30
+        },
+        {
+            "x": 640,
+            "y": 530,
+            "width": 50,
+            "height": 40,
+            "needed_sugar": 20
+        }
+    ],
+    "spout_x": 550,
+    "spout_y": 700,
+    "time_to_complete_level": 60
+}

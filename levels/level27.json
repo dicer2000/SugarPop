@@ -1,0 +1,48 @@
+{
+    "level_by": "Chisanga",
+    "number_sugar_grains": 200,
+    "statics": [
+        {
+            "x1": 250,
+            "y1": 250,
+            "x2": 250,
+            "y2": 250,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        },
+        {
+            "x1": 300,
+            "y1": 250,
+            "x2": 500,
+            "y2": 500,
+            "color": "yellow",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        },
+        {
+            "x1": 600,
+            "y1": 250,
+            "x2": 700,
+            "y2": 250,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        }
+    ],
+    "buckets": [
+        {
+            "x": 720,
+            "y": 200,
+            "width": 50,
+            "height": 40,
+            "needed_sugar": 30
+        }
+    ],
+    "spout_x": 300,
+    "spout_y": 50,
+    "time_to_complete_level": 60
+}

@@ -1,0 +1,94 @@
+{
+    "level_by": "Jeremy",
+    "number_sugar_grains": 70,
+    "statics": [
+        {
+            "x1": 0,
+            "y1": 150,
+            "x2": 800,
+            "y2": 150,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        },
+        {
+            "x1": 0,
+            "y1": 500,
+            "x2": 300,
+            "y2": 500,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        },
+        {
+            "x1": 500,
+            "y1": 500,
+            "x2": 800,
+            "y2": 500,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 1
+        },
+        {
+            "x1": 300,
+            "y1": 800,
+            "x2": 500,
+            "y2": 800,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 1
+        },
+        {
+            "x1": 300,
+            "y1": 800,
+            "x2": 300,
+            "y2": 750,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 1
+        },
+        {
+            "x1": 500,
+            "y1": 800,
+            "x2": 500,
+            "y2": 750,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 1
+        } 
+        
+    ],
+    "buckets": [
+        {
+            "x": 150,
+            "y": 300,
+            "width": 70,
+            "height": 90,
+            "needed_sugar": 20
+        },
+        {
+            "x": 650,
+            "y": 650,
+            "width": 70,
+            "height": 90,
+            "needed_sugar": 20
+        },
+        {
+            "x": 150,
+            "y": 650,
+            "width": 70,
+            "height": 90,
+            "needed_sugar": 20
+        }
+    
+    
+    ],
+    "spout_x": 50,
+    "spout_y": 475
+}
