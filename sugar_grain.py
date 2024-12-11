@@ -7,7 +7,7 @@
 #############################################################
 import pygame as pg
 import pymunk
-from settings import SCALE, HEIGHT
+from settings import SCALE, HEIGHT, SUGAR_SIZE
 
 class sugar_grain:
     def __init__(self, space, x, y, friction=0.3):
@@ -64,7 +64,7 @@ class sugar_grain:
         screen_y = HEIGHT - pos.y * SCALE
 
         # Draw a small square at this position
-        pg.draw.rect(screen, pg.Color('white'), (screen_x - 1, screen_y - 1, 2, 2))
+        pg.draw.rect(screen, pg.Color('white'), (screen_x - 1, screen_y - 1, SUGAR_SIZE, SUGAR_SIZE))
 
     def delete(self):
         """

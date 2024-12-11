@@ -1,0 +1,60 @@
+{
+    "level_by": "Enyinnaya",
+    "number_sugar_grains": 270,
+    "statics": [
+        {
+            "x1": 450,
+            "y1": 325,
+            "x2": 550,
+            "y2": 325,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        },
+        {
+            "x1": 50,
+            "y1": 325,
+            "x2": 150,
+            "y2": 325,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        }
+    ],
+    "buckets": [
+        {
+            "x": 100,
+            "y": 50,
+            "width": 50,
+            "height": 40,
+            "needed_sugar": 60
+        },
+        {
+            "x": 100,
+            "y": 350,
+            "width": 50,
+            "height": 40,
+            "needed_sugar": 60
+        },
+        {
+            "x": 500,
+            "y": 50,
+            "width": 50,
+            "height": 40,
+            "needed_sugar": 60
+        },
+        {
+            "x": 500,
+            "y": 350,
+            "width": 50,
+            "height": 40,
+            "needed_sugar": 60
+        }
+
+    ],
+    "spout_x": 300,
+    "spout_y": 750,
+    "time_to_complete_level": 60
+}

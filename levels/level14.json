@@ -1,0 +1,51 @@
+{
+    "level_by": "Aida",
+    "number_sugar_grains": 250,
+    "statics": [
+        {
+            "x1": 370,
+            "y1": 500,
+            "x2": 600,
+            "y2": 600,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        },
+        {
+            "x1": 370,
+            "y1": 480,
+            "x2": 600,
+            "y2": 380,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        }
+    ],
+    "buckets": [
+        {
+            "x": 500,
+            "y": 500,
+            "width": 50,
+            "height": 50,
+            "needed_sugar": 25
+        },
+        {
+            "x": 425,
+            "y": 400,
+            "width": 50,
+            "height": 50,
+            "needed_sugar": 25
+        },
+        {
+            "x": 525,
+            "y": 350,
+            "width": 50,
+            "height": 50,
+            "needed_sugar": 25
+        }
+    ],
+    "spout_x": 500,
+    "spout_y": 750
+}

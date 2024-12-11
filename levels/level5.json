@@ -1,0 +1,37 @@
+{
+    "level_by": "Owen",
+    "number_sugar_grains": 100,
+    "statics": [
+        {
+            "x1": 450,
+            "y1": 100,
+            "x2": 550,
+            "y2": 100,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.4,
+            "restitution": 0.5
+        }
+    ],
+    "buckets": [
+        {
+            "x": 500,
+            "y": 125,
+            "width": 50,
+            "height": 40,
+            "needed_sugar": 50
+        },
+        {
+            "x": 500,
+            "y": 25,
+            "width": 50,
+            "height": 40,
+            "needed_sugar": 50
+        }
+    ],
+    "spout_x": 500,
+    "spout_y": 700,
+    "time_to_complete_level": 900
+
+    
+}

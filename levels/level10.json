@@ -1,0 +1,42 @@
+{
+    "level_by": "Christian",
+    "number_sugar_grains": 100,
+    "statics": [
+        {
+            "x1": 700,
+            "y1": 240,
+            "x2": 800,
+            "y2": 500,
+            "color": "yellow",
+            "line_width": 3,
+            "friction": 0.8,
+            "restitution": 0.5
+        },
+        {
+            "x1": 600,
+            "y1": 700,
+            "x2": 600,
+            "y2": 300,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.9,
+            "restitution": 0.9
+        }
+
+
+    ],
+    "buckets": [
+        {
+            "x": 50,
+            "y": 50,
+            "width": 50,
+            "height": 40,
+            "needed_sugar": 30
+        }
+
+
+    ],                      
+    "spout_x": 900,
+    "spout_y": 700,
+    "time_to_complete_level": 60
+}

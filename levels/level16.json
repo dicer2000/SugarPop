@@ -1,0 +1,35 @@
+{
+    "level_by": "Tasha",
+    "spout_x": 300,
+    "spout_y": 400,
+    "number_sugar_grains": 300,
+    "buckets": [
+        {
+            "x": 100,
+            "y": 100,
+            "width": 50,
+            "height": 20,
+            "needed_sugar": 50
+        },
+        {
+            "x": 500,
+            "y": 150,
+            "width": 50,
+            "height": 20,
+            "needed_sugar": 50
+        }
+    ],
+    "statics": [
+       
+        {
+            "x1": 300,
+            "y1": 250,
+            "x2": 450,
+            "y2": 200,
+            "color": "blue",
+            "line_width": 5,
+            "friction": 0.5,
+            "restitution": 0.1
+        }
+    ]
+}

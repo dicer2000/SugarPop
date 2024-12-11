@@ -1,0 +1,141 @@
+{
+    "level_by": "Eyasu",
+    "number_sugar_grains": 80,
+    "statics": [
+        {
+            "x1": 670,
+            "y1": 0,
+            "x2": 670,
+            "y2": 800,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        },
+        {
+            "x1": 280,
+            "y1": 300,
+            "x2": 405,
+            "y2": 300,
+            "color": "pink",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        },
+        {
+            "x1": 0,
+            "y1": 300,
+            "x2": 135,
+            "y2": 300,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        },
+        {
+            "x1": 535,
+            "y1": 300,
+            "x2": 670,
+            "y2": 300,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        },
+        {
+            "x1": 135,
+            "y1": 500,
+            "x2": 280,
+            "y2": 420,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        },
+        {
+            "x1": 405,
+            "y1": 420,
+            "x2": 535,
+            "y2": 500,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        },
+        {
+            "x1": 240,
+            "y1": 680,
+            "x2": 335,
+            "y2": 600,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        },
+        {
+            "x1": 335,
+            "y1": 600,
+            "x2": 425,
+            "y2": 680,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        },
+        {
+            "x1": 135,
+            "y1": 95,
+            "x2": 535,
+            "y2": 95,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        },
+        {
+            "x1": 135,
+            "y1": 95,
+            "x2": 135,
+            "y2": 145,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        },
+        {
+            "x1": 535,
+            "y1": 95,
+            "x2": 535,
+            "y2": 145,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        }
+    ],
+    "buckets": [
+    
+        {
+            "x": 790,
+            "y": 740,
+            "width": 60,
+            "height": 50,
+            "needed_sugar": 20
+        }
+    ],
+     "teleportations": [
+        {
+            "entry": [336, 800],
+            "exit": [900, 200],
+            "entry_radius": 40,
+            "exit_radius": 40
+        }
+    ],
+    "spout_x": 335,
+    "spout_y": 760,
+    "time_to_complete_level": 60
+}
+  
+   
+  
+   

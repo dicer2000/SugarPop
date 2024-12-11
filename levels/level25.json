@@ -1,0 +1,100 @@
+{
+    "level_by": "Sana",
+    "number_sugar_grains": 300,
+    "statics": [
+        {
+            "x1": 550,
+            "y1": 470,
+            "x2": 470,
+            "y2": 470,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        },
+        {
+            "x1": 0,
+            "y1": 350,
+            "x2": 80,
+            "y2": 350,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        },
+        {
+            "x1": 944,
+            "y1": 550,
+            "x2": 1024,
+            "y2": 550,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        },
+        {
+            "x1": 550,
+            "y1": 120,
+            "x2": 470,
+            "y2": 120,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        }
+    ],
+    "buckets": [
+        {
+            "x": 512,
+            "y": 500,
+            "width": 40,
+            "height": 40,
+            "needed_sugar": 30
+        },
+        {
+            "x": 974,
+            "y": 580,
+            "width": 40,
+            "height": 40,
+            "needed_sugar": 30
+        },
+        {
+            "x": 50,
+            "y": 380,
+            "width": 40,
+            "height": 40,
+            "needed_sugar": 30
+        },
+        {
+            "x": 512,
+            "y": 500,
+            "width": 40,
+            "height": 40,
+            "needed_sugar": 30
+        },
+        {
+            "x": 200,
+            "y": 300,
+            "width": 40,
+            "height": 40,
+            "needed_sugar": 30
+        },
+        {
+            "x": 800,
+            "y": 300,
+            "width": 40,
+            "height": 40,
+            "needed_sugar": 30
+        },
+        {
+            "x": 512,
+            "y": 150,
+            "width": 40,
+            "height": 40,
+            "needed_sugar": 30
+        }
+    ],
+    "spout_x": 512,
+    "spout_y": 700,
+    "time_to_complete_level": 120
+}

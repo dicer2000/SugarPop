@@ -22,6 +22,7 @@ BOX_COLLISION_TYPE = 2
 
 
 # Level Info
+LEVEL_START_NO = 0
 LEVEL_FILE_NAME = './levels/levelX.json'
 
 # User Defined Events
@@ -29,12 +30,16 @@ START_FLOW = pg.USEREVENT + 1
 FLOW_DELAY = pg.USEREVENT + 2
 LOAD_NEW_LEVEL = pg.USEREVENT + 3
 EXIT_APP = pg.USEREVENT + 4
+TORNADOR = pg.USEREVENT + 5
+TORNADOL = pg.USEREVENT+ 6
 
 # Sounds Contants
-
 SOUNDS = {
     'level': './sounds/Level.mp3',
     'bonus': './sounds/bucket_explode.wav',
-    'bucket': './sounds/bucket2.wav',
+    'bucket': './sounds/ball_tap.wav',
     'level_complete': './sounds/complete2.wav'
 }
+
+# Sugar Attributes
+SUGAR_SIZE = 4

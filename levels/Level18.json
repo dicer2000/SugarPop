@@ -1,0 +1,69 @@
+{
+    "level_by": "Ethan",
+    "number_sugar_grains": 130,
+    "statics": [
+        {
+            "x1": 100,
+            "y1": 280,
+            "x2": 300,
+            "y2": 280,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        },
+        {
+            "x1": 700,
+            "y1": 280,
+            "x2": 900,
+            "y2": 280,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        }, 
+        {
+            "x1": 450,
+            "y1": 450,
+            "x2": 550,
+            "y2": 450,
+            "color": "gray",
+            "line_width": 3,
+            "friction": 0.3,
+            "restitution": 0.5
+        }
+    ],
+    "buckets": [
+        {
+            "x": 200,
+            "y": 320,
+            "width": 50,
+            "height": 40,
+            "needed_sugar": 30
+        }, 
+        {
+            "x": 800,
+            "y": 320,
+            "width": 50,
+            "height": 40,
+            "needed_sugar": 35
+        },
+        {
+            "x": 500,
+            "y": 490,
+            "width": 50,
+            "height": 40,
+            "needed_sugar": 30
+        },
+        {
+            "x": 500,
+            "y": 40,
+            "width": 50,
+            "height": 40,
+            "needed_sugar": 20
+        }
+    ],
+    "spout_x": 500,
+    "spout_y": 780,
+    "time_to_complete_level": 60
+}
