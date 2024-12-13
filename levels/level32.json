@@ -1,0 +1,55 @@
+{
+    "level_by": "Justice",
+    "number_sugar_grains": 100,
+    "statics": [
+        {
+            "x1": 50,
+            "y1": 400,
+            "x2": 250,
+            "y2": 300,
+            "color": "blue",
+            "line_width": 4,
+            "friction": 0.4,
+            "restitution": 0.6
+        },
+        {
+            "x1": 250,
+            "y1": 300,
+            "x2": 450,
+            "y2": 600,
+            "color": "blue",
+            "line_width": 4,
+            "friction": 0.4,
+            "restitution": 0.6
+        },
+        {
+            "x1": 450,
+            "y1": 600,
+            "x2": 650,
+            "y2": 450,
+            "color": "green",
+            "line_width": 5,
+            "friction": 0.5,
+            "restitution": 0.7
+        }
+    ],
+    "buckets": [
+        {
+            "x": 150,
+            "y": 100,
+            "width": 60,
+            "height": 50,
+            "needed_sugar": 35
+        },
+        {
+            "x": 450,
+            "y": 100,
+            "width": 60,
+            "height": 50,
+            "needed_sugar": 35
+        }
+    ],
+    "spout_x": 300,
+    "spout_y": 500,
+    "time_to_complete_level": 70
+}
